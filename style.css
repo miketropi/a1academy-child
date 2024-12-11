@@ -1,0 +1,87 @@
+/*
+Theme Name: A1Academy Child
+Description: This is a child theme for Flatsome Theme
+Author: A1academy
+Template: flatsome
+Version: 3.0
+*/
+
+/*************** ADD CUSTOM CSS HERE.   ***************/
+.footer-top ul li {
+    margin-left: 0px;
+}
+.breadcrumb-background {
+    background-color: #191919 !important;
+    width: 100%;
+}
+.breadcrumb-container {
+	background-color: #191919 !important;
+	box-sizing: border-box;
+}
+.breadcrumb {
+	/*text-align: center;*/
+	padding-top: 5px;
+	padding-left: 1.5%;
+    /*background-color: #191919; /*#fff*/
+    color: white !important;
+	width: 100%;
+}
+@media (max-width: 768px) {
+    .breadcrumb {
+        padding-left: 10% !important;  /* Padding-left cho thiết bị di động */
+    }
+}
+.breadcrumb a {
+    color: white !important;
+}
+.breadcrumb a:hover {
+    text-decoration: underline !important; /* Thêm gạch chân khi hover */
+}
+.breadcrumb nav p {
+	margin-bottom: 0;
+	padding-bottom: 5px;
+}
+.breadcrumb span {
+    font-weight: 450 !important;
+}
+.archive {
+	padding: 0 !important;
+}
+.header .gtranslate .gt-selected {
+	background-color: #191919 !important;
+}
+.header .gtranslate .gt-selected .gt-current-lang {
+	color: white !important;
+}
+.header .gtranslate .gt-selected .gt-current-lang img {
+	width: 27px !important;
+}
+.header .gtranslate .gt-selected .gt-current-lang .gt-lang-code {
+	display: inline-block !important;
+    margin-top: 8px !important;
+}
+.header .gtranslate_wrapper {
+	margin-left: -4px !important;
+}
+.header .gglobe {
+	height: 33px !important;
+	width: 33px !important;
+	margin-top: 3px !important;
+}
+@media (max-width: 767px) {
+    .header .gtranslate span {
+        font-size: 15px !important;
+    }
+	.header .logo {
+		margin-left: 90px !important;
+	}
+}
+.combo-course .title{font-size:28px;font-weight:700;margin-bottom:.5em;margin-top:30px}.combo-course .combo-item{border:1px solid #969bab;text-align:center;padding:15px;min-height:350px}.combo-course .combo-item .combo-gallery{display:flex;align-items:center;margin:auto;transition:all .5s;margin-left:20%}.combo-course .combo-item .combo-gallery .combo-image{max-height:180px}.combo-course .combo-item .combo-gallery .combo-image img{max-height:180px}.combo-course .combo-item .combo-gallery .combo-image:first-child{width:50%}.combo-course .combo-item .combo-gallery .combo-image:nth-child(2){width:50%;margin-left:-20%;transition:all .5s;max-height:175px}.combo-course .combo-item .combo-gallery:hover{margin-left:0}.combo-course .combo-item .combo-gallery:hover .combo-image:nth-child(2){margin-left:0}.combo-course .pure-u-1:nth-child(2) .combo-item{border-left:none;border-right:none}.combo-course .combo-item a:hover{text-decoration:none}.combo-course .combo-item .combo-title{font-size:16px;font-weight:700;color:#18191f;line-height:1.5em;min-height:50px}.combo-course .combo-item .sale-price{font-size:18px;color:#ef004a;font-weight:700;margin:0}.combo-course .combo-item .regular-price{font-size:14px;color:#969bab;margin-top:.5em}.combo-course .combo-item .combo-img{min-height:154px}
+@media(max-width:768px){.combo-course .combo-item .combo-gallery{margin-left:0}.combo-course .combo-item .combo-gallery .combo-image:nth-child(2){margin-left:0;max-height:180px}}
+@media(max-width:600px){.combo-course .title{font-size:20px}.combo-course .combo-item{margin-bottom:15px}.combo-course .pure-u-1:nth-child(2) .combo-item{border-left:1px solid #969bab;border-right:1px solid #969bab}}
+.trials{margin:20px 0 50px}.trials .title{font-size:28px;font-weight:700;margin-bottom:.5em}.trials .trial .pure-u-1:first-child .trial-item{background-color:#6758b8}.trials .trial .pure-u-1:nth-child(2) .trial-item{background-color:#3f75c6}.trials .trial .pure-u-1:last-child .trial-item{background-color:#dbc164}.trials .trial .trial-item{text-align:center;padding:15px}.trials .trial .trial-item .trial-title{color:#f4f5f7;font-size:16px;line-height:1.3;font-weight:700}.trials .trial .trial-item .trial-img{margin:auto}.trials .trial .trial-item .trial-link{color:#fff;font-size:12px;padding:6px 12px;border-radius:6px;background-color:#ff5250;display:block;width:fit-content;margin:20px auto 10px;text-decoration:none;transition:all .5s}.trials .trial .trial-item .trial-link:hover{background-color:#c8003e}@media(max-width:600px){.trials .trial .trial-item{margin-bottom:15px}}
+@media only screen and (max-width: 48em) {
+/*************** ADD MOBILE ONLY CSS HERE  ***************/
+
+
+}
