@@ -18,7 +18,7 @@
    */
   require_once(A1A_DIR . '/inc/static.php');
   require_once(A1A_DIR . '/inc/helpers.php');
-  require_once(A1A_DIR . '/inc/hooks.php');
+  require_once(A1A_DIR . '/inc/hooks.php'); 
   require_once(A1A_DIR . '/inc/ajax.php');
   require_once(A1A_DIR . '/inc/shortcode.php');
 }
@@ -31,3 +31,15 @@ function a1a_parent_enqueue_styles() {
 		get_parent_theme_file_uri( 'style.css' )
 	);
 }
+
+function a1a_register_acf_blocks() {
+  /**
+   * We register our block's with WordPress's handy
+   * register_block_type();
+   *
+   * @link https://developer.wordpress.org/reference/functions/register_block_type/
+   */
+  register_block_type( __DIR__ . '/blocks/testimonial-carousel' );
+}
+// Here we call our tt3child_register_acf_block() function on init.
+add_action( 'init', 'a1a_register_acf_blocks' );

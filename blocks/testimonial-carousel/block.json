@@ -1,0 +1,21 @@
+{
+	"name": "acf/testimonial-carousel",
+	"title": "testimonial carousel",
+	"description": "A custom testimonial carousel block.",
+	"category": "a1a",
+	"icon": "admin-comments",
+	"keywords": ["testimonial"],
+	"acf": {
+		"mode": "edit",
+		"renderTemplate": "testimonial-carousel.php"
+	},
+	"supports": { 
+		"align": true,
+		"html": false,
+		"jsx": false,
+		"mode": true,
+		"spacing": {
+			"margin": true
+		}
+	}
+}
