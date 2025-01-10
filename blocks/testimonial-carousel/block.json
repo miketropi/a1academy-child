@@ -4,18 +4,18 @@
 	"description": "A custom testimonial carousel block.",
 	"category": "a1a",
 	"icon": "admin-comments",
+	"style": [ "file:./testimonial-carousel.css" ],
 	"keywords": ["testimonial"],
 	"acf": {
 		"mode": "edit",
-		"renderTemplate": "testimonial-carousel.php"
+		"renderTemplate": "testimonial-carousel.php" 
 	},
 	"supports": { 
 		"align": true,
-		"html": false,
-		"jsx": false,
 		"mode": true,
 		"spacing": {
-			"margin": true
+			"margin": true,
+			"padding": true
 		}
 	}
 }

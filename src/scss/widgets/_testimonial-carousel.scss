@@ -1,0 +1,39 @@
+.a1a-testimonial-carousel {
+
+  .a1a-testimonial-carousel__item {
+
+    .__message {
+      font-size: 1.5em;
+      font-weight: bold;
+      line-height: 1.5em;
+    }
+
+    .__meta {
+      margin-top: 2em;
+      width: 300px;
+      max-width: 60%;
+      display: grid;
+      grid-template-columns: 70px 1fr;
+      gap: 1.2em;
+      align-items: center;
+    }
+
+    .__meta__avatar {
+
+      img {
+        width: 100%;
+        border-radius: 50px;
+      }
+    }
+
+    .__meta__name {
+      font-weight: bold;
+      color: black;
+    }
+
+    .__meta__position {
+      font-size: .9em;
+      opacity: .7;
+    }
+  }
+}

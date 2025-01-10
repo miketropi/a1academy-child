@@ -13,3 +13,9 @@ function a1a_enqueue_scripts() {
     'ajax-url' => admin_url('admin-ajax.php'),
   ] );
 }
+
+add_action( 'admin_enqueue_scripts', 'a1a_admin_enqueue_scripts' );
+
+function a1a_admin_enqueue_scripts() {
+  wp_enqueue_style( 'a1a-admin-css', A1A_URI . '/dist/css/a1a-admin.bundle.css', false, A1A_VERSION );
+}
