@@ -113,6 +113,9 @@
   position: relative;
   z-index: 3;
 }
+.a1a-hero-section .a1a-hero-section__inner .hero-ss-entry {
+  width: 50%;
+}
 @media (max-width: 450px) {
   .a1a-hero-section {
     padding: 0;
@@ -128,6 +131,7 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
+    width: 100%;
   }
   .a1a-hero-section .hero-ss-entry .wp-block-heading {
     font-size: 32px !important;
