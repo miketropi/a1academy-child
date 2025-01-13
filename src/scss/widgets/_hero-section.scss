@@ -32,22 +32,13 @@
   }
 
   @media(max-width: 450px) {
-    padding: 0;
-
-    .hero-ss-background-layer-desktop {
-      display: none;
-    }
-
-    .hero-ss-background-layer-mobile {
-      display: block;
-    }
 
     .hero-ss-entry {
+      width: 100% !important;
       display: flex;
       flex-direction: column;
       text-align: center;
       align-items: center;
-      width: 100%;
 
       .wp-block-heading {
         font-size: 32px !important;
@@ -59,4 +50,20 @@
       }
     }
   }
+
+  &:not(.__content-overlay-mobi) {
+    @media(max-width: 450px) {
+      padding: 0;
+  
+      .hero-ss-background-layer-desktop {
+        display: none;
+      }
+  
+      .hero-ss-background-layer-mobile {
+        display: block;
+      }
+    }
+  }
+
+  
 }
