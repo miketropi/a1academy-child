@@ -22,7 +22,7 @@ Block::make( __( 'Hero Section Block' ) )
 		array( 'core/buttons' )
 	) )
 	->set_render_callback( function ( $fields, $attributes, $inner_blocks ) {
-    print_r($fields);
+    // print_r($fields);
     ?>
 		<div class="a1a-hero-section <?php echo $fields['content_overlay_mobi'] ? '__content-overlay-mobi' : '' ?> <?php echo isset($attributes['className']) ? $attributes['className'] : ''; ?>">
       <div class="hero-ss-background-layer-desktop" style="background: url(<?php echo $fields['background_image']; ?>) no-repeat center center / cover;"></div>
