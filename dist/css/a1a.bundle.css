@@ -117,6 +117,9 @@
   width: 50%;
 }
 @media (max-width: 450px) {
+  .a1a-hero-section {
+    padding: 4em 0 5em;
+  }
   .a1a-hero-section .hero-ss-entry {
     width: 100% !important;
     display: flex;
