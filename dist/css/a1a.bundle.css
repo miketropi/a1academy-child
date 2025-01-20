@@ -127,6 +127,13 @@
     text-align: center;
     align-items: center;
   }
+}
+@media (max-width: 450px) and (max-width: 450px) {
+  .a1a-hero-section .hero-ss-entry {
+    padding: 2em 0;
+  }
+}
+@media (max-width: 450px) {
   .a1a-hero-section .hero-ss-entry .wp-block-heading {
     font-size: 32px !important;
   }
@@ -145,4 +152,19 @@
   .a1a-hero-section:not(.__content-overlay-mobi) .hero-ss-background-layer-mobile {
     display: block;
   }
+}
+
+.__entry-right-style .hero-ss-entry {
+  margin-left: 50%;
+  text-align: right;
+}
+@media (max-width: 450px) {
+  .__entry-right-style .hero-ss-entry {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+.__entry-right-style .wp-block-buttons {
+  justify-content: flex-end;
 }
