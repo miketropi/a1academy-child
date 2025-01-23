@@ -25,7 +25,25 @@ import 'swiper/css';
     });
   }
 
+  const toggleContentBlock = () => {
+    $('.a1a-toggle-content-block').each(function() {
+      const $self = $(this);
+      console.log($self);
+
+      $self.find('.__toggle-content').hide();
+      $self.on('click', '.__toggle-header', function(e) {
+        e.preventDefault();
+        let $parent = $(this).parent('.a1a-toggle-content-item');
+        $parent.siblings().find('.__toggle-content').slideUp('slow');
+        $parent.children('.__toggle-content').slideDown('slow');
+      })
+
+      $self.find('.a1a-toggle-content-item:first-child .__toggle-header').trigger('click')
+    })
+  }
+
   $(() => {
     doSwiperInit();
+    toggleContentBlock();
   })
 })(window, jQuery);

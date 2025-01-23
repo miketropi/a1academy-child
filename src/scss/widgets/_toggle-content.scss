@@ -1,0 +1,21 @@
+.a1a-toggle-content-block {
+
+  .a1a-toggle-content-item {
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    border-bottom: solid 1px #eee;
+  }
+
+  .__toggle-header {
+    margin: 0;
+    padding: .8em 0;
+    cursor: pointer;
+  }
+
+  .__toggle-content {
+
+    p {
+      margin: 0;
+    }
+  }
+}

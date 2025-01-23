@@ -38,8 +38,23 @@ __webpack_require__.r(__webpack_exports__);
       }
     });
   };
+  var toggleContentBlock = function toggleContentBlock() {
+    $('.a1a-toggle-content-block').each(function () {
+      var $self = $(this);
+      console.log($self);
+      $self.find('.__toggle-content').hide();
+      $self.on('click', '.__toggle-header', function (e) {
+        e.preventDefault();
+        var $parent = $(this).parent('.a1a-toggle-content-item');
+        $parent.siblings().find('.__toggle-content').slideUp('slow');
+        $parent.children('.__toggle-content').slideDown('slow');
+      });
+      $self.find('.a1a-toggle-content-item:first-child .__toggle-header').trigger('click');
+    });
+  };
   $(function () {
     doSwiperInit();
+    toggleContentBlock();
   });
 })(window, jQuery);
 

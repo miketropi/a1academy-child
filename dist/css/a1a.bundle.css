@@ -21,6 +21,11 @@
   border-radius: 10px;
   border: solid 1px #ddd;
 }
+@media (max-width: 768px) {
+  .a1a-testimonial-carousel .a1a-testimonial-carousel__item .__message {
+    font-size: clamp(16px, 3vw, 32px);
+  }
+}
 .a1a-testimonial-carousel .a1a-testimonial-carousel__item .__meta {
   margin-top: 2em;
   width: 300px;
@@ -167,4 +172,18 @@
 
 .__entry-right-style .wp-block-buttons {
   justify-content: flex-end;
+}
+
+.a1a-toggle-content-block .a1a-toggle-content-item {
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  border-bottom: solid 1px #eee;
+}
+.a1a-toggle-content-block .__toggle-header {
+  margin: 0;
+  padding: 0.8em 0;
+  cursor: pointer;
+}
+.a1a-toggle-content-block .__toggle-content p {
+  margin: 0;
 }

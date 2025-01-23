@@ -8,6 +8,10 @@
 			padding: 1em 2em;
 			border-radius: 10px;
 			border: solid 1px #ddd;
+
+			@media(max-width: 768px) {
+				font-size: clamp(16px, 3vw, 32px);
+			}
 		}
 		.__meta {
 			margin-top: 2em;
