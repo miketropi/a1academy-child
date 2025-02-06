@@ -238,3 +238,17 @@
   font-weight: 500;
   opacity: 0.7;
 }
+
+.image-gallery-container {
+  display: grid;
+  gap: 1em;
+}
+.image-gallery-container .image-item {
+  line-height: 0;
+}
+.image-gallery-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  border: solid 1px #fdfdfd;
+}

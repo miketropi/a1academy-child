@@ -24,3 +24,18 @@ function a1a_get_related_posts_by_category($post_id, $limit = 5) {
   $related_posts = new WP_Query($args);
   return $related_posts;
 }
+
+function a1a_image_gallery_block_item($image_id) {
+  $image_data = wp_get_attachment_image_src($image_id, 'full');
+  if(!isset($image_data[0])) return;
+
+  ob_start();
+  ?>
+  <div class="image-item" data-src="<?php echo $image_data[0]; ?>">
+    <a href="<?php echo $image_data[0]; ?>" >
+      <?php echo wp_get_attachment_image($image_id, 'thumbnail') ?>
+    </a>
+  </div>
+  <?php
+  return ob_get_clean();
+}

@@ -12,10 +12,12 @@ Block::make( __( 'Related Posts Block' ) )
   ->set_mode( 'edit' )
 	->set_render_callback( function ( $fields, $attributes, $inner_blocks ) {
     global $post;
+
     $items = (int) $fields['items'];
     if(empty($items) || $items == 0) return;
 
     $related_posts = a1a_get_related_posts_by_category($post->ID, $items);
+    if(!$related_posts) return;
     ?>
 		<div class="a1a-related-posts-content-block">
       <?php if ($related_posts->have_posts()) : ?>

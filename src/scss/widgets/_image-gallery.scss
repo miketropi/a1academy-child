@@ -1,0 +1,15 @@
+.image-gallery-container {
+  display: grid;
+  gap: 1em;
+
+  .image-item {
+    line-height: 0;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    border: solid 1px #fdfdfd;
+  }
+}

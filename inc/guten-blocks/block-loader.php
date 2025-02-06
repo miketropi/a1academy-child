@@ -11,4 +11,5 @@ function a1a_crb_attach_blocks() {
   require( __DIR__ . '/hero-section.php' );
   require( __DIR__ . '/toggle-content.php' );
   require( __DIR__ . '/related-posts.php' );
+  require( __DIR__ . '/image-gallery.php' );
 }
