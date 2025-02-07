@@ -54,3 +54,7 @@ function a1a_crb_load() {
   require_once( 'vendor/autoload.php' );
   \Carbon_Fields\Carbon_Fields::boot();
 }
+
+add_action('wp_head', function() {
+  echo get_field('a1a_header_script', 'option'); 
+});
