@@ -16,6 +16,28 @@
   font-size: 0.9em;
 }
 
+.a1a-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+}
+.a1a-breadcrumb a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.a1a-breadcrumb svg {
+  width: 16px;
+  height: 16px;
+}
+.a1a-breadcrumb span {
+  color: #6c6c6c;
+}
+
 .a1a-testimonial-carousel {
   position: relative;
 }
