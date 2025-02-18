@@ -20,6 +20,13 @@ function a1a_blog_breadcrumb_shortcode() {
         $categories = get_the_category();
         if (!empty($categories)) {
             $category = $categories[0]; // Get primary category
+            
+            // Check if category has parent and add parent link first
+            if ($category->parent) {
+                $parent_cat = get_category($category->parent);
+                $output .= ' / <a href="' . get_category_link($parent_cat->term_id) . '">' . $parent_cat->name . '</a>';
+            }
+            
             $output .= ' / <a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a>';
         }
         
