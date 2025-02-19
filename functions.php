@@ -7,7 +7,7 @@ use Carbon_Fields\Field;
  * @since 12/12/2024
  */
 {
-  define('A1A_VERSION', '1.0.0');
+  define('A1A_VERSION', rand(1, 999999));
   define('A1A_URI', get_stylesheet_directory_uri(__FILE__));
   define('A1A_DIR', get_stylesheet_directory(__DIR__));
 }
